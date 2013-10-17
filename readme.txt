@@ -12,14 +12,18 @@ Utilize EasyCron's API to configure a cron job that will trigger WordPress's cro
 
 EasyCron (http://www.easycron.com) provides reliable online cron job service worldwide. Its insanely easy-to-use webcron have helped thousands of users who're fastidious on task scheduling perfectly configure cron jobs. 
 
-
 = Main features include: =
 
 * Support Standard Cron Expression
+
 * Email Notification
+
 * Cron Job Execution Logs
+
 * Run Time Prediction
+
 * Random Cron Jobs
+
 * Timezone Adaptable
 
 
