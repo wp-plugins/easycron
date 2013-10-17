@@ -36,7 +36,7 @@ You may also upgrade to a premium plan which has some advanced features and will
 
 == Screenshots ==
 
-1. This screenshot shows the admin page of the EasyCron plugin.
+
 
 == Changelog ==
 
