@@ -1,7 +1,7 @@
 === Easycron ===
 Contributors: easycron
 Donate link: http://www.easycron.com/
-Tags: cron job, webcron, task scheduler
+Tags: cron job, webcron, task scheduler, WP-Cron
 Requires at least: 3.0
 Tested up to: 3.6.1
 Stable tag: 1.0
@@ -12,20 +12,13 @@ Utilize EasyCron's API to configure a cron job that will trigger WordPress's cro
 
 EasyCron (http://www.easycron.com) provides reliable online cron job service worldwide. Its insanely easy-to-use webcron have helped thousands of users who're fastidious on task scheduling perfectly configure cron jobs. 
 
-= Main features include: =
-
+= Features =
 * Support Standard Cron Expression
-
 * Email Notification
-
 * Cron Job Execution Logs
-
 * Run Time Prediction
-
 * Random Cron Jobs
-
 * Timezone Adaptable
-
 
 == Installation ==
 
