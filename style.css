@@ -1,0 +1,11 @@
+#icon-easycron {
+    background: transparent url( 'easycron_32x32.png' ) no-repeat;
+}
+
+div.easycron-box {
+	border: 1px solid #0093BE;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	max-width: 800px;
+}
