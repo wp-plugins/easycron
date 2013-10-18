@@ -1,7 +1,7 @@
 === Easycron ===
 Contributors: easycron
 Donate link: http://www.easycron.com/
-Tags: cron job, webcron, task scheduler, WP-Cron
+Tags: cron, cron job, wp-cron, webcron, task scheduler
 Requires at least: 3.0
 Tested up to: 3.6.1
 Stable tag: 1.0
