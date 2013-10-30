@@ -172,16 +172,17 @@ function easycron_options_validate($input) {
 		        $input["error"] = true;
             }
         } else {
+            
+            $input["error"] = true;
+            $input["message"] .= $result['error']['message'];
+            
             if (($action == 'edit') && ($result['error']['code'] == 25)) {
                 // Something wrong with the cron job ID, create a new cron job
                 $result = easycron_connect('add', $easycron_settings);
                 if ($result['status'] == 'success') {
                     $input['cron-job-id'] = $result['cron_job_id'];
                     $input["error"] = false;
-                } else {
-                    $input["message"] .= $result['error']['message'];
-		            $input["error"] = true;
-                } 
+                }
             }
         }
     }
