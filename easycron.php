@@ -127,7 +127,7 @@ function easycron_options_validate($input) {
 	$input["error"] = false;
 
     if (strlen($input["api-token"]) != 32) {
-        $input["message"] .= "The API token should be 32 characters' long.<br/>";
+        $input["message"] = "The API token should be 32 characters' long.";
 		$input["error"] = true;
     }
 
@@ -168,13 +168,13 @@ function easycron_options_validate($input) {
                 $input['cron-job-id'] = $cron_job_id;
                 $input["error"] = false;
             } else {
-                $input["message"] .= $result['error']['message'];
+                $input["message"] = $result['error']['message'];
 		        $input["error"] = true;
             }
         } else {
             
             $input["error"] = true;
-            $input["message"] .= $result['error']['message'];
+            $input["message"] = $result['error']['message'];
             
             if (($action == 'edit') && ($result['error']['code'] == 25)) {
                 // Something wrong with the cron job ID, create a new cron job
@@ -182,6 +182,8 @@ function easycron_options_validate($input) {
                 if ($result['status'] == 'success') {
                     $input['cron-job-id'] = $result['cron_job_id'];
                     $input["error"] = false;
+                } else {
+                    $input["message"] = $result['error']['message'];
                 }
             }
         }
