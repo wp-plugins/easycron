@@ -3,7 +3,7 @@
 Plugin Name: EasyCron
 Plugin URI: https://www.easycron.com
 Description: EasyCron helps you easily configure a cron job without the need of Wp-Cron and Cron on your server.
-Version: 1.0
+Version: 1.1
 Author: easycron
 Author URI: https://www.easycron.com
 License: GPL v2
