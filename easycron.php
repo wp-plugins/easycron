@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: EasyCron
-Plugin URI: http://www.easycron.com
+Plugin URI: https://www.easycron.com
 Description: EasyCron helps you easily configure a cron job without the need of Wp-Cron and Cron on your server.
 Version: 1.0
 Author: easycron
-Author URI: http://www.easycron.com
+Author URI: https://www.easycron.com
 License: GPL v2
 */
 
@@ -67,12 +67,12 @@ function easycron_input_status() {
 
 function easycron_input_api_token() {
 	$options = get_option('easycron_options');
-	?><input id="easycron-api-token" style="width:250px;" name="easycron_options[api-token]" size="40" type="text" value="<?php echo $options['api-token']; ?>" /> <i>You can get API token for free at <a href="http://www.easycron.com/user/token">http://www.easycron.com/user/token</a>.</i><?php
+	?><input id="easycron-api-token" style="width:250px;" name="easycron_options[api-token]" size="40" type="text" value="<?php echo $options['api-token']; ?>" /> <i>You can get API token for free at <a href="https://www.easycron.com/user/token">https://www.easycron.com/user/token</a>.</i><?php
 }
 
 function easycron_input_cron_expression() {
 	$options = get_option('easycron_options');
-	?><input id="easycron-cron-expression" style="width:250px;" name="easycron_options[cron-expression]" size="40" type="text" value="<?php echo $options['cron-expression']; ?>" /> <i>Checkout <a href="http://www.easycron.com/faq/What-cron-expression-does-easycron-support">cron expressions supported</a>.</i><?php
+	?><input id="easycron-cron-expression" style="width:250px;" name="easycron_options[cron-expression]" size="40" type="text" value="<?php echo $options['cron-expression']; ?>" /> <i>Checkout <a href="https://www.easycron.com/faq/What-cron-expression-does-easycron-support">cron expressions supported</a>.</i><?php
 }
 
 function easycron_input_email_me() {
@@ -95,7 +95,7 @@ function easycron_input_log() {
 	?><select id="easycron-log" style="width:150px;" name="easycron_options[log]">
 		<option value="0" <?php echo ($options['log']=="0"?"selected":"")?>>No</option>
 		<option value="1" <?php echo ($options['log']=="10240"?"selected":"")?>>Yes</option>
-	</select> <i>Log cron job's output (You can view the logs at <a href="http://www.easycron.com">http://www.easycron.com</a>.</i><?php
+	</select> <i>Log cron job's output (You can view the logs at <a href="https://www.easycron.com">https://www.easycron.com</a>.</i><?php
 }
 
 function easycron_input_cron_job_id() {
@@ -109,7 +109,7 @@ function easycron_connect($action, $easycron_settings) {
         $settings_array[] = $key . '=' . urlencode($value);
     }
     $settings_str = implode('&', $settings_array);
-    $url = 'http://www.easycron.com/rest/' . $action . '?' . $settings_str;
+    $url = 'https://www.easycron.com/rest/' . $action . '?' . $settings_str;
     $result = wp_remote_get($url);
 
     if (is_wp_error($result)) {
