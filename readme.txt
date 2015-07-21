@@ -3,7 +3,7 @@ Contributors: easycron
 Donate link: https://www.easycron.com/
 Tags: cron, cron job, wp-cron, webcron, task scheduler
 Requires at least: 3.0
-Tested up to: 3.6.1
+Tested up to: 4.2.2
 Stable tag: 1.1
 
 Utilize EasyCron's API to configure a cron job that will trigger WordPress's cron script(wp-cron.php) periodically. 
